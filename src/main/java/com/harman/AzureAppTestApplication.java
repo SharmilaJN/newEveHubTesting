@@ -22,7 +22,7 @@ public class AzureAppTestApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(AzureAppTestApplication.class, args);
 		
-		publishEvents();
+		publishEventsNew();
 	}
 
 	

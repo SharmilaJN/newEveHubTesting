@@ -27,7 +27,7 @@ public class AzureAppTestController {
 	private static final String eventHubName = "bbeventhub";
 	@GetMapping(value ="/message")
 	public String getStarupMessage() {
-		return "This is a Demo webapp deployed Successfully";
+		return "This is a Demo webapp deployed Successfully@@@@@@@@@@@@@@@";
 		
 	}
 		
@@ -90,7 +90,7 @@ public class AzureAppTestController {
 	     * Code sample for publishing events.
 	     * @throws IllegalArgumentException if the EventData is bigger than the max batch size.
 	     */
-	    public static void publishEventsNew(CellularInfo cellInfo) {
+	    public static void publishEventsNew() {
 	        // create a producer client
 	        EventHubProducerClient producer = new EventHubClientBuilder()
 	            .connectionString(connectionString, eventHubName)
@@ -98,6 +98,7 @@ public class AzureAppTestController {
 
 	        // sample events in an array
 	        // 
+	        System.out.println(ObjectToJson.convertToJson());
 	        List<EventData> allEvents = Arrays.asList(new EventData(ObjectToJson.convertToJson()));
 
 	        // create a batch
