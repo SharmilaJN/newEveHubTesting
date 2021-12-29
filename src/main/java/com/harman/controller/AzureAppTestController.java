@@ -20,11 +20,11 @@ import com.harman.dto.ObjectToJson;
 public class AzureAppTestController {
 	
 
-	//private static final String connectionString = "Endpoint=sb://aanamespace.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=sjjnI8IM10yujqiIlwp+2YFRpZvVkUfBgPGZX3t9BzA=";		
-	//private static final String eventHubName = "aaeventhub";
+	private static final String connectionString = "Endpoint=sb://aanamespace.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=sjjnI8IM10yujqiIlwp+2YFRpZvVkUfBgPGZX3t9BzA=";		
+	private static final String eventHubName = "aaeventhub";
 
-	private static final String connectionString = "Endpoint=sb://bbnamespace.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=4Bd70m4anqOvTwh7J1w2juT73RRGGbbOp2cMHneBIhU=";		
-	private static final String eventHubName = "bbeventhub";
+	//private static final String connectionString = "Endpoint=sb://bbnamespace.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=4Bd70m4anqOvTwh7J1w2juT73RRGGbbOp2cMHneBIhU=";		
+	//private static final String eventHubName = "bbeventhub";
 	@GetMapping(value ="/message")
 	public String getStarupMessage() {
 		return "This is a Demo webapp deployed Successfully@@@@@@@@@@@@@@@";
